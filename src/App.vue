@@ -1,17 +1,13 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
+  <q-layout view="lHh Lpr lFf">
+    <q-page-container> </q-page-container>
+  </q-layout>
 </template>
 
-<script setup>
-</script>
+<script>
+import { ref } from "vue";
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+export default {
+  name: "LayoutDefault",
+};
+</script>
