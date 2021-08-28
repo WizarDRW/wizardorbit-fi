@@ -10,18 +10,19 @@
         icon="menu"
       />
 
-      <q-toolbar-title> Quasar App </q-toolbar-title>
+      <q-toolbar-title> Wizard's Orbit </q-toolbar-title>
 
-      <div>Quasar v{{ $q.version }}</div>
+      <div>Quasar</div>
     </q-toolbar>
   </q-header>
 </template>
 
 <script>
+import { ref } from "vue";
 export default {
   setup() {
     return {
-      leftDrawerOpen: ref(false),
+      leftDrawerOpen: ref(true),
     };
   },
 };

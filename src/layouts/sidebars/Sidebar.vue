@@ -62,10 +62,11 @@
 </template>
 
 <script>
+import { ref } from "vue";
 export default {
   setup() {
     return {
-      leftDrawerOpen: ref(false),
+      leftDrawerOpen: ref(true),
     };
   },
 };
