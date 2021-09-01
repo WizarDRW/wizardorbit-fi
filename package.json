@@ -9,8 +9,10 @@
   "dependencies": {
     "@quasar/extras": "^1.0.0",
     "autoprefixer": "^10.3.3",
+    "axios": "^0.21.1",
     "quasar": "^2.0.0",
     "vue": "^3.2.6",
+    "vue-axios": "^3.2.5",
     "vue-router": "^4.0.11"
   },
   "devDependencies": {
