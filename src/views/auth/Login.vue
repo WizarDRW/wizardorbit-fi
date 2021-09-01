@@ -40,6 +40,7 @@ export default {
   methods: {
     auth(){
       if (this.username && this.key) {
+        this.$store.dispatch('login')
       }
     }
   },
