@@ -18,7 +18,8 @@
         counter
         :rules="[
           (val) => (val !== null && val !== '') || 'Please type your key',
-          (val) => (val.length > 50 && val.length < 100) || 'Please type a real key',
+          (val) =>
+            (val.length > 50 && val.length < 100) || 'Please type a real key',
         ]"
       />
 
@@ -34,15 +35,18 @@ export default {
   data() {
     return {
       username: null,
-      key: null
-    }
+      key: null,
+    };
   },
   methods: {
-    auth(){
+    auth() {
       if (this.username && this.key) {
-        this.$store.dispatch('login')
+        this.$store.dispatch("login", {
+          username: this.username,
+          key: this.key,
+        }).then(() => this.$router.push('/'));
       }
-    }
+    },
   },
 };
 </script>
