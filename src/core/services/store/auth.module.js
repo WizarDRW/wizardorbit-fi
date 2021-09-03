@@ -7,7 +7,7 @@ const PURGE_AUTH = 'purgeAuth';
 
 export default {
     state: {
-        isAuth: false
+        isAuth: true
     },
     getters: {
         isAuth: (state) => state.isAuth

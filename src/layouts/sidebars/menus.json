@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Bash",
+        "path": "/bash",
+        "icon": "mdi-console"
+    },
+    {
+        "name": "CPU",
+        "path": "/cpu",
+        "icon": "mdi-cpu-64-bit"
+    },
+    {
+        "name": "Memory",
+        "path": "/ram",
+        "icon": "fas fa-memory"
+    }
+]

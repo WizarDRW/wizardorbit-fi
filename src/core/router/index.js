@@ -1,4 +1,4 @@
-import {createRouter, createWebHistory} from "vue-router"
+import { createRouter, createWebHistory } from "vue-router"
 
 const router = createRouter({
     history: createWebHistory(),
@@ -10,7 +10,9 @@ const router = createRouter({
         },
         {
             path: '/',
-            component: () => import("@/layouts/Container.vue")
+            component: () => import("@/layouts/Container.vue"),
+            children: [
+            ]
         }
     ]
 })
