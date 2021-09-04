@@ -1,6 +1,7 @@
 import ApiService from '../api.service'
 
 export const LOGIN = 'login';
+export const CURRET_USER = 'currentUser';
 
 const SET_AUTH = 'setAuth';
 const PURGE_AUTH = 'purgeAuth';
