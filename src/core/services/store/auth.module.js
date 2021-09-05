@@ -8,7 +8,8 @@ const PURGE_AUTH = 'purgeAuth';
 
 export default {
     state: {
-        isAuth: true
+        isAuth: true,
+        user: null
     },
     getters: {
         isAuth: (state) => state.isAuth
@@ -24,6 +25,9 @@ export default {
                     reject(err)
                 })
             })
+        },
+        [CURRET_USER]: async(context) => {
+            context.commit(SET_AUTH)
         }
     },
     mutations: {
