@@ -9,7 +9,8 @@ const PURGE_AUTH = 'purgeAuth';
 export default {
     state: {
         isAuth: true,
-        user: null
+        user: null,
+        error: null
     },
     getters: {
         isAuth: (state) => state.isAuth
