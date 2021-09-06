@@ -10,8 +10,14 @@ const router = createRouter({
         },
         {
             path: '/',
+            redirect: { name: 'Bash' },
             component: () => import("@/layouts/Container.vue"),
             children: [
+                {
+                    name: 'Bash',
+                    path: '/bash',
+                    component: () => import('@/views/bash/Bash.vue')
+                }
             ]
         }
     ]
