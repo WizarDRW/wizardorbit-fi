@@ -7,7 +7,7 @@
         round
         @click="leftDrawerOpen = !leftDrawerOpen"
         aria-label="Menu"
-        icon="menu"
+        icon="fas fa-ellipsis-v"
       />
 
       <q-toolbar-title> Wizard's Orbit </q-toolbar-title>
